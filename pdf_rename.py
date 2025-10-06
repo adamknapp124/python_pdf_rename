@@ -47,7 +47,6 @@ def process_with_tesseract(file_path):
             img = Image.frombytes("RGB", [page_pixmap.width, page_pixmap.height], page_pixmap.samples)
             extracted_text = pytesseract.image_to_string(img).replace("\n", " ")
 
-        # Search for the target string
         index = extracted_text.find(ORDER_NUMBER_PREFIX)
 
         # Extract the order number and rename the file
