@@ -15,10 +15,9 @@ ORDER_NUMBER_PREFIX = "Order# "
 PDF_FILENAME_PREFIX = "Packlist_"
 PDF_EXTENSION = ".pdf"
 
-# Optionally, you can add Tesseract to your system PATH for easier access
-# Set path to tesseract executable, comment line below if tesseract is in your PATH
+# Set path to tesseract executable
 pytesseract.pytesseract.tesseract_cmd = "PATH/TO/TESSERACT_EXECUTABLE"  # e.g., "/usr/bin/tesseract"
-
+# Optionally, you can add Tesseract to your system PATH for easier access
 
 def log_messages(message):
     # Log messages to a file with timestamps
